@@ -12,6 +12,15 @@
   โปรเจกต์เว็บแอปพลิเคชันเครื่องคำนวณเงินอุดหนุนโครงการรัฐบาล พัฒนาขึ้นโดยใช้เฟรมเวิร์ก <strong>Next.js (App Router)</strong>, <strong>TypeScript</strong> และจัดสไตล์ด้วย <strong>Tailwind CSS v4</strong> โดยอิงตามแนวคิดการออกแบบแบบ Bento Grid และรองรับการแสดงผลทุกแพลตฟอร์มอย่างสมบูรณ์ (Responsive Design)
 </p>
 
+<p align="center">
+  <a href="https://nut-chuay-kid.vercel.app/" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🌐%20Live%20Demo-%E0%B8%97%E0%B8%94%E0%B8%A5%E0%B8%AD%E0%B8%87%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%8C%E0%B8%A3%E0%B8%B4%E0%B8%87-0070f3?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo" />
+  </a>
+</p>
+
+> [!TIP]
+> 🌐 **ทดลองใช้งานจริงออนไลน์ได้แล้ววันนี้!** สามารถเข้าใช้เครื่องคำนวณสิทธิ์เงินอุดหนุนโครงการรัฐบาลและบันทึกประวัติการคำนวณบนเบราว์เซอร์ของคุณได้ทันทีโดยไม่ต้องติดตั้งโปรแกรมใดๆ เพิ่มเติม ที่ลิงก์ 👉 **[nut-chuay-kid.vercel.app](https://nut-chuay-kid.vercel.app/)**
+
 ---
 
 ## ✨ คุณสมบัติหลัก (Features)
