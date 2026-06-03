@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# นัทช่วยคิด (Nut chuay kid) - เครื่องคำนวณเงินอุดหนุนรัฐบาล
 
-## Getting Started
+โปรเจกต์เว็บแอปพลิเคชันเครื่องคำนวณเงินอุดหนุนโครงการรัฐบาล พัฒนาขึ้นโดยใช้เฟรมเวิร์ก **Next.js (App Router)**, **TypeScript** และจัดสไตล์ด้วย **Tailwind CSS v4** โดยอิงตามแนวคิดการออกแบบแบบ Bento Grid และรองรับการแสดงผลทุกแพลตฟอร์มอย่างสมบูรณ์ (Responsive Design)
 
-First, run the development server:
+---
+
+## ✨ คุณสมบัติหลัก (Features)
+
+1. **การคำนวณแบบเรียลไทม์:** คำนวณเงินอุดหนุนจากรัฐบาลทันที 60% ของราคาสินค้า และจำกัดวงเงินช่วยเหลือสูงสุด 200 บาทต่อรายการ
+2. **ระบบบันทึกประวัติการคำนวณ:** สามารถกดบันทึกรายการคำนวณล่าสุดเก็บไว้ในเบราว์เซอร์ (`localStorage`) สูงสุด 10 รายการ และจัดการลบประวัติทีละรายการหรือทั้งหมดได้ตามต้องการ
+3. **ตารางเปรียบเทียบด่วน:** ตารางแสดงอัตราส่วนราคาที่รัฐออกและเราจ่ายเอง ตั้งแต่วงเงินช่วย 10 บาทไปจนถึงเพดานสูงสุด 200 บาท
+4. **ความสวยงามและใช้งานง่าย:** ดีไซน์พรีเมียม สบายตา ปราศจากองค์ประกอบที่ทำให้เกิดภาระทางข้อมูล (Cognitive Load) พร้อมแอนิเมชันและเอฟเฟกต์การโฟกัสที่ราบรื่น
+
+---
+
+## 🛠️ การติดตั้งและเริ่มต้นใช้งาน (Getting Started)
+
+ก่อนเริ่มต้นใช้งาน ตรวจสอบให้แน่ใจว่าได้ติดตั้ง [Node.js](https://nodejs.org) เรียบร้อยแล้ว
+
+### 1. ติดตั้งไลบรารีที่จำเป็น (Dependencies)
+รันคำสั่งด้านล่างนี้ในโฟลเดอร์โปรเจกต์เพื่อติดตั้งแพ็คเกจ:
+
+```bash
+npm install
+```
+
+### 2. รันระบบในโหมดพัฒนา (Development Server)
+เริ่มการทำงานของ Local Server สำหรับพัฒนา:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# หรือ
+npm.cmd run dev (สำหรับระบบ Windows ที่ปิดการใช้งาน PowerShell Scripts)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+เปิดลิงก์ [http://localhost:3000](http://localhost:3000) บนเบราว์เซอร์ของคุณเพื่อเข้าใช้งานตัวเครื่องมือ
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 คำสั่งอื่นๆ ที่สำคัญ (Project Commands)
 
-## Learn More
+* **`npm run dev`** : เริ่มใช้งานเซิร์ฟเวอร์จำลองการพัฒนา (Hot-reloads เมื่อมีการแก้ไขไฟล์)
+* **`npm run build`** : ทำการคอมไพล์โค้ดและสร้างโปรเจกต์เวอร์ชันใช้งานจริง (Production Build) เพื่อความรวดเร็วและปลอดภัยสูงสุด
+* **`npm run start`** : สตาร์ทโปรเจกต์เวอร์ชันใช้งานจริงหลังจากที่รันคำสั่ง build เรียบร้อยแล้ว
+* **`npm run lint`** : ตรวจสอบความถูกต้องของโค้ดและไวยากรณ์ TypeScript/React ด้วย ESLint
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📱 วิธีการใช้งานหน้าแอปพลิเคชัน (How to Use)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **ระบุราคาสินค้า:** กรอกราคาสินค้าจริงลงในกล่องข้อความ **"ราคาสินค้าจริง (บาท)"**
+2. **ดูยอดส่วนต่าง:** ระบบจะแสดงผลคำนวณแยกตามสัดส่วนโดยทันที:
+   * **รัฐช่วยจ่าย (60%)** (จำกัดสูงสุด 200 บาท)
+   * **คุณจ่ายเองจริง (40%)** (หรือส่วนต่างที่หักลดเงินจากรัฐออกแล้ว)
+   * **มูลค่าสินค้ารวมที่ได้รับ** (ราคาสินค้าเต็มปกติ)
+3. **บันทึกข้อมูล:** คลิกปุ่มบวก (`+`) ด้านข้างยอดมูลค่ารวม เพื่อบันทึกประวัติการคำนวณลงในประวัติล่าสุด
+4. **ตรวจสอบเงื่อนไข:** เลื่อนลงมาด้านล่างเพื่อตรวจสอบหลักเกณฑ์และตารางเปรียบเทียบราคาเบื้องต้นสำหรับการตัดสินใจซื้อ
