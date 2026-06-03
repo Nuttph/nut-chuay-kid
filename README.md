@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/logo.png" alt="นัทช่วยคิด Logo" width="120" style="border-radius: 20px; background-color: #ffffff; padding: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
+  <img src="public/logo.png" alt="นัทช่วยคิด Logo" style="border-radius: 20px; background-color: #ffffff; padding: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
 </p>
 
 <h1 align="center">นัทช่วยคิด (Nut chuay kid)</h1>
