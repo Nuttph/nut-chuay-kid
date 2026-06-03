@@ -104,9 +104,18 @@ export default function Home() {
       <header className="bg-surface/90 backdrop-blur-md shadow-sm border-b border-outline-variant/30 sticky top-0 z-50 transition-colors">
         <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop h-16 flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <span className="font-bold text-2xl tracking-tight text-primary flex items-center gap-2">
-              <Sparkles className="w-6 h-6 text-on-tertiary-container animate-pulse" />
+          <div className="flex items-center gap-3">
+            <div className="bg-white p-1.5 rounded-xl shadow-[0_2px_8px_rgba(0,0,0,0.06)] border border-outline-variant/30 flex items-center justify-center w-10 h-10 overflow-hidden">
+              <Image 
+                src="/logo.png" 
+                alt="นัทช่วยคิด Logo" 
+                width={32} 
+                height={32} 
+                className="object-contain"
+                priority
+              />
+            </div>
+            <span className="font-bold text-2xl tracking-tight text-primary">
               นัทช่วยคิด
             </span>
           </div>
@@ -182,7 +191,17 @@ export default function Home() {
       <main className="flex-grow pb-12">
 
         {/* Hero Section */}
-        <section className="py-12 md:py-20 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto text-center">
+        <section className="py-12 md:py-16 px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto text-center flex flex-col items-center">
+          <div className="bg-white p-3 rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-outline-variant/20 mb-6 flex items-center justify-center w-20 h-20 transition-transform duration-300 hover:scale-105">
+            <Image 
+              src="/logo.png" 
+              alt="นัทช่วยคิด Logo" 
+              width={64} 
+              height={64} 
+              className="object-contain"
+              priority
+            />
+          </div>
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-secondary-container/50 text-on-secondary-container text-xs font-semibold mb-6">
             <Sparkles className="w-3.5 h-3.5" />
             ผู้ช่วยคำนวณเงินอุดหนุนรัฐบาล
@@ -536,22 +555,11 @@ export default function Home() {
       </main>
 
       {/* Footer */}
-      <footer className="bg-surface-container-lowest border-t border-outline-variant/30 py-10 mt-auto">
-        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="text-secondary text-body-sm text-center md:text-left">
+      <footer className="bg-surface-container-lowest border-t border-outline-variant/30 py-8 mt-auto">
+        <div className="max-w-7xl mx-auto px-margin-mobile md:px-margin-desktop flex flex-col items-center justify-center gap-3">
+          <div className="text-secondary text-body-sm text-center">
             <span className="font-semibold text-primary block md:inline md:mr-2">นัทช่วยคิด</span>
             © 2026 ระบบคำนวณเงินสมทบอุดหนุนรัฐบาล 60% จำกัดส่วนลดสูงสุด 200 บาท
-          </div>
-          <div className="flex gap-6 flex-wrap justify-center">
-            <a href="#" className="text-secondary hover:text-primary text-body-sm hover:underline transition-colors duration-200">
-              ข้อกำหนดการใช้งาน
-            </a>
-            <a href="#" className="text-secondary hover:text-primary text-body-sm hover:underline transition-colors duration-200">
-              นโยบายความเป็นส่วนตัว
-            </a>
-            <a href="#" className="text-secondary hover:text-primary text-body-sm hover:underline transition-colors duration-200">
-              ติดต่อสอบถาม/ช่วยเหลือ
-            </a>
           </div>
         </div>
       </footer>

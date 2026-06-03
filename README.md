@@ -1,6 +1,16 @@
-# นัทช่วยคิด (Nut chuay kid) - เครื่องคำนวณเงินอุดหนุนรัฐบาล
+<p align="center">
+  <img src="public/logo.png" alt="นัทช่วยคิด Logo" width="120" style="border-radius: 20px; background-color: #ffffff; padding: 12px; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);" />
+</p>
 
-โปรเจกต์เว็บแอปพลิเคชันเครื่องคำนวณเงินอุดหนุนโครงการรัฐบาล พัฒนาขึ้นโดยใช้เฟรมเวิร์ก **Next.js (App Router)**, **TypeScript** และจัดสไตล์ด้วย **Tailwind CSS v4** โดยอิงตามแนวคิดการออกแบบแบบ Bento Grid และรองรับการแสดงผลทุกแพลตฟอร์มอย่างสมบูรณ์ (Responsive Design)
+<h1 align="center">นัทช่วยคิด (Nut chuay kid)</h1>
+
+<p align="center">
+  <strong>เครื่องคำนวณเงินอุดหนุนรัฐบาล 60% (จำกัดวงเงินช่วยเหลือสูงสุด 200 บาท)</strong>
+</p>
+
+<p align="center">
+  โปรเจกต์เว็บแอปพลิเคชันเครื่องคำนวณเงินอุดหนุนโครงการรัฐบาล พัฒนาขึ้นโดยใช้เฟรมเวิร์ก <strong>Next.js (App Router)</strong>, <strong>TypeScript</strong> และจัดสไตล์ด้วย <strong>Tailwind CSS v4</strong> โดยอิงตามแนวคิดการออกแบบแบบ Bento Grid และรองรับการแสดงผลทุกแพลตฟอร์มอย่างสมบูรณ์ (Responsive Design)
+</p>
 
 ---
 
